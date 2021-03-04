@@ -1,7 +1,7 @@
 {
-  "name": "lite-cli",
+  "name": "@huicode/lite-cli",
   "version": "0.1.0",
-  "description": "",
+  "description": "一个精简版的vue脚手架",
   "main": "index.js",
   "bin": {
     "lvc": "./bin/cli.js"
@@ -15,8 +15,8 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["lite","vue-cli"],
+  "author": "smionhui",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
