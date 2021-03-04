@@ -7,8 +7,8 @@
     "lvc": "./bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pub": "sh release.sh"
+    "pub": "sh release.sh",
+    "test": "jest --coverage"
   },
   "husky": {
     "hooks": {
