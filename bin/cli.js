@@ -7,7 +7,11 @@ program
   .command('create <name>')
   .description('create a new project')
   .action((name) => {
-    create(name)
+    try {
+      create(name)
+    } catch (error) {
+      console.error(error)
+    }
   })
 
 program.parse(process.argv)
