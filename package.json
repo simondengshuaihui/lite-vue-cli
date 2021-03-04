@@ -15,9 +15,14 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simondengshuaihui/lite-vue-cli"
+  },
+  "homepage": "https://github.com/simondengshuaihui/lite-vue-cli#readme",
   "keywords": ["lite","vue-cli"],
   "author": "smionhui",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
