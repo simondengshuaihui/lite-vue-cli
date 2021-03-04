@@ -1,6 +1,6 @@
 {
   "name": "@huicode/lite-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "一个精简版的vue脚手架",
   "main": "index.js",
   "bin": {
@@ -20,7 +20,10 @@
     "url": "https://github.com/simondengshuaihui/lite-vue-cli"
   },
   "homepage": "https://github.com/simondengshuaihui/lite-vue-cli#readme",
-  "keywords": ["lite","vue-cli"],
+  "keywords": [
+    "lite",
+    "vue-cli"
+  ],
   "author": "smionhui",
   "license": "MIT",
   "dependencies": {

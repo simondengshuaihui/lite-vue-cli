@@ -9,8 +9,8 @@ then
   echo "Releasing $VERSION ..."
 
   # commit
-  git add -A
-  git commit -m "build: $VERSION"
+  # git add -A
+  # git commit -m "build: $VERSION"
   npm version $VERSION --message "[release] $VERSION"
   git push origin master
 
