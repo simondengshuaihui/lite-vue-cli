@@ -1,9 +1,9 @@
 # Title
 
-一个精简版的vue脚手架.
+一个精简版的vue脚手架.暴露webpack配置可自行定义修改，精简示例组件，敏捷开发。
 
 ## Install
-可全局安装或使用npx
+可全局安装或使用npx直接使用
 
 ```js
 npm install -g @huicode/lite-cli 
