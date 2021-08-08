@@ -17,8 +17,17 @@ on:
    
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 #git pull
+      - uses: actions/setup-node@v2 #安装node
+        with:
+          node-version: 14
+      - name: print node version
+        run: node -v
+
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,19 +35,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - name: print node version
-        run: node -v
-      - run: npm ci
+      - run: yarn
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-
- # build:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2 #git pull
-  #     - uses: actions/setup-node@v2 #安装node
-  #       with:
-  #         node-version: 14
-  #     - run: yarn install
