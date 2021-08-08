@@ -1,6 +1,6 @@
 {
   "name": "@huicode/lite-cli",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "一个精简版的vue脚手架",
   "main": "index.js",
   "bin": {
