@@ -6,6 +6,8 @@ name: Node.js Package
 on:
   release: #每次创建新版本时
     types: [created]
+    branches: 
+      - master
 
 jobs:
   build:
@@ -29,6 +31,6 @@ jobs:
       - name: print node version
         run: node -v
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
