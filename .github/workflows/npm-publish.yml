@@ -4,10 +4,16 @@
 name: Node.js Package
 
 on:
-  release: #每次创建新版本时
-    types: [created]
-    branches: 
-      - master
+  # release: #每次创建新版本时
+  #   types: [created]
+  #   branches: 
+  #     - master
+  push: 
+      branches: 
+        - master
+      paths: 
+        - 'src/**'
+   
 
 jobs:
   # build:
